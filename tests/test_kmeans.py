@@ -16,6 +16,5 @@ def test_fit_returns_three_centroids():
     X, _ = make_blobs(n_samples=300, centers=3, cluster_std=0.5, random_state=0)
 
     model = KMeans(k=3).fit(X)
-
     assert model.centroids_.shape == (3, 2)
     assert len(np.unique(model.labels_)) == 3
