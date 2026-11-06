@@ -47,4 +47,4 @@ class KMeans:
         return self
 
     def predict(self, X):
-        pass
+        return self._assign(X, self.centroids_)
